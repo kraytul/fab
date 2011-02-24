@@ -1,0 +1,43 @@
+{
+func something1(a: integer) {
+	write(a)
+} and 
+quicksort(a:@integer, m:integer, n: integer) {
+  func partition(y:integer, z:integer) -> integer {
+    var i := y;
+    var j := z + 1;
+    while (i < j) do {
+      loop {
+	  i := i + 1;
+	  if a[i] >= a[y] then 
+	    exit
+      };
+	loop {
+        j := j - 1;
+        if a[j] <= a[y] then
+          exit
+      };
+	if i < j then
+        exchange(i,j)
+    };
+    exchange(y,j);
+    return j
+  } 
+  and exchange(p : integer, q: integer) {
+    var x := a[p];
+    a[p] := a[q];
+    a[q] := x
+  };
+  if n > m then {
+    var i : integer := partition(m,n);
+    quicksort(a,m,i-1);
+    quicksort(a,i+1,n)
+  }
+} and something(a: integer) {
+	write(a)
+};
+
+something(2);
+something1(5)
+
+}

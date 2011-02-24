@@ -1,0 +1,9 @@
+{
+  var i : integer := 0;
+  var up := @boolean {15 of true};
+  var down := @boolean {15 of true};
+  var rows := @boolean {15 of true};
+  var x := @integer {8 of 12};
+
+  write(i)
+}

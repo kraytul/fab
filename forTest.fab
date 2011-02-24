@@ -1,0 +1,17 @@
+{ var x := 2; var y := 2; var b := false;
+write(x);
+
+for x := 5 to 12 by 1 do
+	write(x);
+
+write(x);
+
+for y := 5 to (y + 35) by (y + 2) do {
+	var z:= 2;
+	write(y);
+	write(z)
+};
+	
+write(y);
+write(b)
+}

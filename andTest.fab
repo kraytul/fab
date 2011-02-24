@@ -1,0 +1,8 @@
+{
+var x := true;
+var y := false;
+var z := true;
+
+z := x and y
+
+}

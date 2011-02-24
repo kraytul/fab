@@ -1,0 +1,9 @@
+record simple { w: boolean, x: integer, y : boolean, z: integer, z0: boolean, z1: () -> unit, z2: boolean};
+
+{
+func bill () -> unit {
+	write("testing...")
+};
+var blue := simple{w:= false, x:= 12, y:= true, z:= 90, z0:= false, z1 := bill, z2 := true}
+
+}

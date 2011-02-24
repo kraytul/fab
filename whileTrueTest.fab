@@ -1,0 +1,8 @@
+{
+var x := true;
+
+while x do {
+  write(x)
+}
+
+}

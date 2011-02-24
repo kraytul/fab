@@ -1,0 +1,17 @@
+{
+	write("String");
+	write(true);
+	write(true and false);
+	write(7);
+	write(5 + 4);
+	write("Many", true, 5, 5+7);
+	
+	func moo() -> integer{
+		return 5
+	};
+	func moo2() -> boolean{
+		return true
+	};
+	write(moo());
+	write(moo2())
+}

@@ -1,0 +1,10 @@
+{
+	loop {
+	write("Bam");
+		loop {
+		write("ohyeah");
+		exit
+		};
+	exit
+	}
+}

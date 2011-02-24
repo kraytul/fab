@@ -1,0 +1,19 @@
+{
+  var i := 0;
+
+  func start() -> integer {
+    write("start");
+    return 0
+  } and stop() -> integer {
+    write("stop");
+    return 25
+  } and step() -> integer {
+    write("step");
+    return 1
+  };
+
+
+
+  for i := start() to stop() by step() do
+    write("for")
+}

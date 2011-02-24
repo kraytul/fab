@@ -1,0 +1,1 @@
+{ write ("Hello", " World!", "There seem to be ", 2, " of you! Is this ", true, "?") }

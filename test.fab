@@ -1,0 +1,7 @@
+{
+  func test() -> integer {
+    return 5
+  };
+
+  write(test())
+}

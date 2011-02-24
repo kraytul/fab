@@ -1,0 +1,7 @@
+{
+	var v := 0;
+	var u := 0;
+	for u := 1 to 5 by 2 do {
+		write("forloop: ", u)
+	}
+}

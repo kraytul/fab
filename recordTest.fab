@@ -1,0 +1,14 @@
+record CounterRep {x : integer};
+record BackupCounterRep extends CounterRep {b : integer};
+record ExtendedBackupCounterRep extends BackupCounterRep {c : boolean};
+
+{ 
+var cr := CounterRep{x := 1};
+var bcr := BackupCounterRep{x := 1, b:= 2};
+var ebcr := ExtendedBackupCounterRep{x := 34, b := 98, c := false};
+
+write("CounterRep: ", cr.x);
+write("BackupCounterRep: ", bcr.x, ", ", bcr.b);
+write("ExtendedBackupCounterRep: ", ebcr.x, ", ", ebcr.b, ", ", ebcr.c)
+
+}

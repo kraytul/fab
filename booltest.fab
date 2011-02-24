@@ -1,0 +1,11 @@
+{
+var x : boolean := false;
+var xx := @boolean {3 of true, 2 of false};
+var y : integer := 4;
+var z := @integer {3 of 6};
+var g := not x;
+
+write (x);
+write (xx[2],xx[3]);
+write (y, z[1])
+}

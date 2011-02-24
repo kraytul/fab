@@ -1,0 +1,12 @@
+{
+	while (true or false) do {
+		var v := 0;
+		while true do {
+			write(v);
+			v := v + 1
+		};
+		
+		write("Done")
+	};
+	write("done")
+}

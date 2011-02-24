@@ -1,0 +1,45 @@
+record list {value:integer, next:list};
+{
+  func cons (v:integer, n: list) -> list {
+    return list{value := v, next := n}
+  };
+
+  func fold (f: (integer,integer) -> integer, b: integer, l : list) -> integer {
+    if l = nil then 
+      return b
+    else 
+      return f(l.value, fold(f,b,l.next))
+  };
+
+  func sum (l:list) -> integer {
+    func plus (a:integer, b:integer) -> integer {
+      return a+b
+    };
+    return fold (plus, 0, l)
+  };
+
+  func prod (l:list) -> integer {
+    func mult (a:integer, b:integer) -> integer {
+      return a*b
+    };
+    return fold (mult, 1, l)
+  };
+
+  [* interactive tests *]
+  loop {
+    var n := 0;
+    write ("enter list length:");
+    read (n);
+    if n < 0 then exit;
+    var l : list := nil;
+    var i := 0;
+    for i := 0 to n-1 do {
+      var x := 0;
+      write ("enter list element ", i, ":");
+      read (x);
+      l := cons(x,l)
+    };
+    write ("sum is ", sum(l));
+    write ("product is ", prod(l))
+  }      
+}

@@ -1,0 +1,12 @@
+{
+var x := false;
+if (not (not x)) then {
+	write("true")
+};
+
+x := true;
+
+if (not (not x)) then {
+	write("false")
+}
+}

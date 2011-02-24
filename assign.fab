@@ -1,0 +1,23 @@
+{
+	var v := true or false;
+	v := true;
+	v := false;
+	v := true or false;
+	v := true or (true and false);
+	v := false or (true and false);
+	var b := false;
+	v := b;
+	b := true and false;
+	v := b;
+	b := v;
+	
+	b := true;
+	v := false;
+	
+	b := (b and not v) or (not b and v);
+	v := (b and not v) or (not b and v);
+	b := (b and not v) or (not b and v);
+	
+	write("B: ", b, "V: ", v);
+	write("Done!")
+}

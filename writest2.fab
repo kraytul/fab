@@ -1,0 +1,12 @@
+{
+	write(-5);
+	write(-(5+4));
+	write(-(5+(-4)));
+	write(not true);
+	write(not false);
+	write(not (true and false));
+	write(not (true or false));
+	write(not (false and false));
+	write(not (false or not false));
+	write("Done")
+}

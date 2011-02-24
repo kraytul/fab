@@ -1,0 +1,6 @@
+record CounterRep {x : integer};
+
+{ 
+var cr := CounterRep{x := 1};
+write(cr = nil)
+}

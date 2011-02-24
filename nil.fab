@@ -1,0 +1,6 @@
+record list {value:integer, next:list};
+{
+  var v:list := nil;
+
+  v.value := 0
+}

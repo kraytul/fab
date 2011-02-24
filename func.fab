@@ -1,0 +1,20 @@
+{
+	var v := 5;
+	var u := 4;
+	func sum(n: integer, m: integer){
+		write(n + m)
+	} and dif(n: integer, m: integer){
+		write(n - m)
+	};
+	func mult(n: integer, m: integer){
+		write(n * m)
+	};
+	func moo() -> integer{
+		return 5
+	};
+	
+	sum(v , u);
+	
+	write(moo())
+	
+}

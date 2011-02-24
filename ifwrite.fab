@@ -1,0 +1,7 @@
+{
+	if true or false then {
+	   write(true)		
+	} else {
+	  write(false)
+	}
+}
